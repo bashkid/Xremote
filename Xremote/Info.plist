@@ -2,9 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIBackgroundModes</key>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Xremote uses the local network to discover and connect to your Mac running Xremote Server.</string>
+	<key>NSBonjourServices</key>
 	<array>
-		<string>remote-notification</string>
+		<string>_xremote._tcp</string>
 	</array>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Xremote streams microphone audio to your Mac so it can transcribe voice commands on-device for Claude Code automation.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Xremote Server transcribes spoken commands on this Mac's Neural Engine so they can be passed to Claude Code.</string>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
 </dict>
 </plist>
